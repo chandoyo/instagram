@@ -44,6 +44,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
                 print("error!")
             }
         }
+        
     }
     
     @IBAction func onCameraButton(_ sender: Any) {
