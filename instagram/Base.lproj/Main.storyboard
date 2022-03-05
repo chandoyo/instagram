@@ -141,6 +141,42 @@
                                             <outlet property="usernameLabel" destination="C6i-2A-efI" id="zOP-5p-V7e"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" id="dy1-ES-NG8" customClass="CommentCell" customModule="instagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="501.5" width="414" height="37.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dy1-ES-NG8" id="Atj-bS-hCO">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="37.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Moz-5D-SC1">
+                                                    <rect key="frame" x="16" y="8" width="34" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51t-Ce-CmF">
+                                                    <rect key="frame" x="58" y="8" width="138.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Moz-5D-SC1" firstAttribute="top" secondItem="Atj-bS-hCO" secondAttribute="top" constant="8" id="4qJ-DF-ol0"/>
+                                                <constraint firstItem="Moz-5D-SC1" firstAttribute="leading" secondItem="Atj-bS-hCO" secondAttribute="leading" constant="16" id="D9i-MR-3EC"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Moz-5D-SC1" secondAttribute="bottom" constant="8" id="Ddu-kj-rqg"/>
+                                                <constraint firstItem="51t-Ce-CmF" firstAttribute="top" secondItem="Atj-bS-hCO" secondAttribute="top" constant="8" id="MEI-Et-SOd"/>
+                                                <constraint firstItem="51t-Ce-CmF" firstAttribute="leading" secondItem="Moz-5D-SC1" secondAttribute="trailing" constant="8" id="PdN-Qj-FQr"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="51t-Ce-CmF" secondAttribute="trailing" constant="8" id="UoB-Ep-HiT"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="51t-Ce-CmF" secondAttribute="bottom" constant="8" id="gQH-oC-wS1"/>
+                                                <constraint firstItem="51t-Ce-CmF" firstAttribute="leading" secondItem="Moz-5D-SC1" secondAttribute="trailing" constant="8" id="zMd-QR-Jk5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="commentLabel" destination="51t-Ce-CmF" id="Uar-AW-R6V"/>
+                                            <outlet property="nameLabel" destination="Moz-5D-SC1" id="rmB-IR-FhI"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
